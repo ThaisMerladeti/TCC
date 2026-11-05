@@ -1,0 +1,64 @@
+# 📁 BACKEND – API / SERVIDOR E.L.A.S.
+
+## 📌 Visão Geral
+
+Este diretório contém o backend do aplicativo **E.L.A.S. (Esclarecer, Lutar, Apoiar e Salvar)**, responsável pelo processamento das requisições, autenticação das usuárias, gerenciamento de dados e integração com o banco de dados e o sistema de alertas.
+
+A API realiza a comunicação entre o aplicativo e o banco de dados MySQL, permitindo o armazenamento e a consulta das informações.
+
+## 🧩 Estrutura do Código
+
+- **config/** – Configurações de conexão com o banco de dados.
+- **src/** – Funções auxiliares, conexão com o banco e autenticação.
+- **rotas/** – Endpoints responsáveis pelas operações da API.
+- **database/** – Arquivos SQL para criação e estruturação do banco de dados.
+- **index.php** – Arquivo principal responsável pelo funcionamento da API.
+
+## 🔗 Principais Funcionalidades
+
+- **Cadastro:** registro e armazenamento dos dados das usuárias.
+- **Login:** autenticação e validação de acesso.
+- **Atualização:** gerenciamento das informações cadastrais.
+- **Alertas SOS:** processamento das solicitações de emergência.
+- **Localização:** armazenamento e gerenciamento dos dados de localização.
+- **Configurações:** gerenciamento das preferências da usuária.
+- **Health Check:** verificação do funcionamento da API e da conexão com o banco.
+
+## 🗄️ Banco de Dados
+
+O projeto utiliza **MySQL**, com gerenciamento pelo phpMyAdmin, disponibilizado pelo XAMPP.
+
+Principais tabelas:
+
+- `usuarios`
+- `configuracoes`
+- `alertas`
+- `localizacoes_usuario`
+- `locais_seguros`
+- `acessos`
+- `termos_aceitos`
+
+## 🛠️ Tecnologias Utilizadas
+
+- PHP 8.2
+- MySQL
+- XAMPP (Apache e MySQL)
+- phpMyAdmin
+- JSON
+- JWT (autenticação)
+- HTTP / API REST
+
+## 🚀 Como Executar
+
+1. Instale e inicie o XAMPP.
+2. Ative os serviços Apache e MySQL.
+3. Coloque a pasta `elas-api` no diretório `htdocs`.
+4. Importe o arquivo `database/elas_mysql.sql` pelo phpMyAdmin.
+5. Configure a conexão com o banco de dados.
+6. Acesse a API pelo navegador:
+
+`http://localhost/elas-api/api/health`
+
+## 📘 Observação
+
+O TCC apresenta os principais trechos de código e suas funcionalidades. O repositório contém a implementação completa do backend, organizada em pastas para facilitar a manutenção e compreensão do projeto.
